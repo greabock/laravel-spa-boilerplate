@@ -168,10 +168,13 @@ return [
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
 
+        Dingo\Api\Provider\LaravelServiceProvider::class,
+
         /**
          * App
          */
         Asvae\ApiTester\ServiceProvider::class,
+
     ],
 
     /*

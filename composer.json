@@ -12,7 +12,8 @@
         "laravelcollective/html": "v5.2.4",
         "doctrine/dbal": "v2.5.4",
         "spatie/laravel-fractal": "1.9.0",
-        "asvae/laravel-api-tester": "dev-development"
+        "asvae/laravel-api-tester": "dev-development",
+        "dingo/api": "1.0.x@dev"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

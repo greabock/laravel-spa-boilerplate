@@ -6,16 +6,11 @@ use Illuminate\Filesystem\Filesystem;
 
 class MainTest extends TestCase
 {
+
+
     public function test_page_is_displayed()
     {
         $this->visit('api-tester')->see('<vm-api-tester-main>');
-    }
-
-    public function test_page_is_not_displayed_when_disabled()
-    {
-        Config::set('api-tester.enabled', false);
-
-        $this->get('api-tester')->seeStatusCode(403);
     }
 
     public function test_assets_are_retrievable()
@@ -44,6 +39,7 @@ class MainTest extends TestCase
         $this->post('api-tester/requests', [], [
             'X-Requested-With' => 'XMLHttpRequest'
         ])->seeStatusCode(422);
+
     }
 
     public function test_valid_request_can_be_stored()

@@ -26,7 +26,5 @@ return [
 
     'middleware' => ['web'],
 
-    'exclude' => [
-        '_d'
-    ]
+    'exclude' => []
 ];
